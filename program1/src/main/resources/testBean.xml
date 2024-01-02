@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="customer" class="com.example.program1.Customer">
+        <!--  property name="name" value="John Doe" /> -->
+        <!--  property name="address" value="123 Main St" /> -->
+        <property name="tick" ref="ticket" />
+    </bean>
+
+    <bean id="ticket" class="com.example.program1.Ticket">
+        <!--property name="ticno" value="0" />
+        <property name="price" value="0" /> 
+        <property name="seatno" value="0" /> 
+        <property name="ticktype" value="DefaultType" /> -->
+    </bean>
+
+    <!-- more bean definitions go here -->
+</beans>
