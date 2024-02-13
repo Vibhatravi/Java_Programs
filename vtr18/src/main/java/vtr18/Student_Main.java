@@ -25,6 +25,7 @@ public class Student_Main {
 		s.setName(name);
 		s.setAddress(address);
 		s.setUsn(usn);
+		s.setTotalMarks(totalmarks);
 		session.save(s);
 		t.commit();
 	}
